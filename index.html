@@ -43,7 +43,7 @@
 							/>
 						</svg>
 					</div>
-					<input type="number" name="bill" id="bill" />
+					<input type="text" name="bill" id="bill" />
 				</div>
 			</div>
 			<div class="tip">
@@ -54,11 +54,14 @@
 					<div class="tip__values--item third">15%</div>
 					<div class="tip__values--item fourth">25%</div>
 					<div class="tip__values--item fifth">50%</div>
-					<div class="tip__values--item sixth">Custom</div>
+					<div class="tip__values--item sixth">
+						<input type="text" placeholder="Custom" />
+					</div>
 				</div>
 			</div>
 			<div class="people">
 				<h2>Number of People</h2>
+				<span class="people__alert">Can't be zero</span>
 				<div class="people__input">
 					<div class="people__input--icon">
 						<svg
@@ -72,7 +75,12 @@
 							/>
 						</svg>
 					</div>
-					<input type="number" name="bill" id="bill" />
+					<input
+						type="text"
+						name="bill"
+						id="bill"
+						class="people__input--green"
+					/>
 				</div>
 			</div>
 			<div class="result">
@@ -83,7 +91,7 @@
 							/ person
 						</div>
 					</div>
-					<div class="result__amount--price">$4.27</div>
+					<div class="result__amount--price">$0.00</div>
 				</div>
 				<div class="result__total">
 					<div class="result__total--text">
@@ -92,7 +100,7 @@
 							/ person
 						</div>
 					</div>
-					<div class="result__amount--price">$32.79</div>
+					<div class="result__amount--price">$0.00</div>
 				</div>
 				<div class="result__button"><button>Reset</button></div>
 			</div>
