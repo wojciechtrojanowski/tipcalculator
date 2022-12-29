@@ -118,6 +118,10 @@ input[type=text]::placeholder {
   border-radius: 0.3em;
   padding: 0.1em 0;
 }
+.tip__values--item:hover {
+  cursor: pointer;
+  background-color: hsl(185deg, 41%, 84%);
+}
 .tip__values .sixth {
   background-color: hsl(189deg, 41%, 97%);
   color: hsl(184deg, 14%, 56%);
@@ -125,6 +129,10 @@ input[type=text]::placeholder {
 
 .people {
   flex-basis: 10%;
+}
+.people__alert {
+  display: none;
+  color: red;
 }
 
 .result {
@@ -232,7 +240,6 @@ input[type=text]::placeholder {
     flex-basis: 65%;
   }
   .card .people__alert {
-    flex-basis: 30%;
     color: red;
   }
   .card .result {
@@ -250,4 +257,7 @@ input[type=text]::placeholder {
     cursor: pointer;
     background-color: hsl(185deg, 41%, 84%);
   }
+}
+.active {
+  background-color: hsl(185deg, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */
